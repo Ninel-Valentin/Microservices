@@ -1,0 +1,77 @@
+td.button_cell {
+    text-align: center;
+}
+
+td.button_cell input {
+    background-color: var(--dark-gray);
+    color: white;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    height: 1.5rem;
+    width: 5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color .25s ease-out, background-color .25s ease-out;
+}
+
+td.button_cell input:hover {
+    background-color: var(--mid-gray);
+    color: black;
+}
+
+td.button_cell input:active {
+    background-color: var(--light-gray);
+    color: black;
+}
+
+table.info_display {
+    border: 1px solid black;
+    width: 80vw;
+    margin: 5vh 2vw;
+}
+
+table.info_display tr td {
+    background-color: var(--mid-gray);
+    text-align: center;
+}
+
+table.info_display tr:nth-child(2n) td {
+    background-color: var(--light-gray);
+}
+
+table.info_display td:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table.info_display button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .5rem 0;
+    border: none;
+    outline: none;
+    background-color: rgba(60, 60, 60, 0);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+table.info_display button:hover {
+    background-color: rgba(60, 60, 60, 0.35);
+}
+
+table.info_display button.edit {
+    background-image: url('../images/edit.png');
+}
+
+table.info_display button.delete {
+    background-image: url('../images/delete.png');
+}
+
+table.info_display input[readonly] {
+    pointer-events: none;
+    cursor: not-allowed;
+}

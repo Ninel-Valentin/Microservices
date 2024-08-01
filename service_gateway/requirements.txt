@@ -1,0 +1,11 @@
+Flask
+Flask-RESTful
+Flask-session
+Flask-login
+Flask-SQLAlchemy
+SQLAlchemy
+mysqlclient
+WTForms
+Flask-WTF
+requests
+email-validator
